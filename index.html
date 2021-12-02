@@ -40,7 +40,7 @@
       announcements and our launch deals.
     </p>
     <!--Email text box-->
-    <form id="form"  action="#">
+    <form id="form" action="#">
       <input
         class="emailBox"
         type="email"
@@ -50,7 +50,13 @@
         aria-label="email"
         required
       />
-      <img id="error-icon" src="./images/icon-error.svg" alt="Error Icon">
+      <!-- This is the error icon that will show when a valid email is not provided -->
+      <img
+        id="error-icon"
+        class="error-icon-visible"
+        src="./images/icon-error.svg"
+        alt="Error Icon"
+      />
       <button class="submit-button">
         <img src="images/icon-arrow.svg" alt="Right pointed arrow" />
       </button>

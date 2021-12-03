@@ -18,60 +18,63 @@
     />
     <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
-
-  <header>
-    <!--This is the logo-->
-    <div>
-      <img src="images/logo.svg" alt="Base Apparel Logo" class="logo" />
-    </div>
-  </header>
-
+  
+  <!--------- Moblile-first approach -------->
   <body>
-    <h1>
-      WE'RE <br />
-      <span
-        >COMING <br />
-        SOON</span
-      >
-    </h1>
-    <p class="paragraph-one">
-      Hello fellow shoppers! We're currently building our new <br />
-      fashion store. Add your email below to stay up-to-date with <br />
-      announcements and our launch deals.
-    </p>
-    <!--Email text box-->
-    <form id="form" action="#">
-      <input
-        class="emailBox"
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Email Address"
-        aria-label="email"
-        required
-      />
-      <!-- This is the error icon that will show when a valid email is not provided -->
-      <img
-        id="error-icon"
-        class="error-icon-visible"
-        src="./images/icon-error.svg"
-        alt="Error Icon"
-      />
-      <button class="submit-button">
-        <img src="images/icon-arrow.svg" alt="Right pointed arrow" />
-      </button>
-    </form>
-    <p class="error-message">Please provide a valid email address</p>
+    <!-- Header with the logo -->
+    <header class="header-logo">
+      <img src="images/logo.svg" alt="Base Apparel Logo" class="logo" />
+    </header>
 
-    <div>
-      <img
-        src="images/hero-desktop.jpg"
-        alt=" A girl posing"
-        class="main-image"
-      />
-    </div>
+    <!------- Main content of the page ====== -->
+    <main class="main-pg">
+      <!---- Hero image ---->
+      <picture class="main-pg_hero">
+        <source media="(max-width:767px)" srcset="images/hero-mobile.jpg" />
+        <source media="(min-width:768px)" srcset="images/hero-desktop.jpg" />
+        <img
+          src="images/hero-desktop.jpg"
+          alt=" A girl posing"
+          class="hero-desktop_img"
+        />
+      </picture>
 
-    <footer>
+      <section class="main-pg_hero"></section>
+      <!---- Headline ---->
+      <section class="main-pg_content">
+        <h1 class="title text-pink">
+          We're <br />
+          <span class="text-gray"
+            >Coming <br />
+            Soon</span
+          >
+        </h1>
+        <p class="subtitle text-pink">
+          Hello fellow shoppers! We're currently building our new <br />
+          fashion store. Add your email below to stay up-to-date with <br />
+          announcements and our launch deals.
+        </p>
+        <!----Email form box---->
+        <form id="eform" action="#" name="eform">
+          <input
+            class="emailBox"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+            aria-label="email"
+            required
+          />
+          <button type="submit" class="submit-button">
+            <img src="images/icon-arrow.svg" alt="Right pointed arrow" />
+          </button>
+        </form>
+        <!-- This is the error icon that will show when a valid email is not provided -->
+        <p class="error-msg">Please provide a valid email address</p>
+      </section>
+    </main>
+
+    <!-- <footer>
       <p class="attribution">
         Challenge by
         <a
@@ -82,6 +85,6 @@
         >
         Coded by AOA19
       </p>
-    </footer>
+    </footer> -->
   </body>
 </html>

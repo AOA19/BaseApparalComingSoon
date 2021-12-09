@@ -22,7 +22,7 @@
   <!--------- Moblile-first approach -------->
   <body>
     <!-- Header with the logo -->
-    <header class="header-logo">
+    <header>
       <img src="images/logo.svg" alt="Base Apparel Logo" class="logo" />
     </header>
 
@@ -41,35 +41,38 @@
 
       <!---- Headline ---->
       <section class="main-pg_content">
-        <h1 class="title text-pink">
+        <h1 class="title title-pink">
           We're <br />
-          <span class="text-gray"
+          <span class="title-gray"
             >Coming <br />
             Soon</span
           >
         </h1>
-        <p class="subtitle text-pink">
-          Hello fellow shoppers! We're currently building our new <br />
-          fashion store. Add your email below to stay up-to-date with <br />
-          announcements and our launch deals.
+        <p class="subtitle title-pink">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
         </p>
         <!----Email form box---->
         <form id="eform" action="#" name="eform">
-          <input
-            class="emailBox"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email Address"
-            aria-label="email"
-            required
-          />
+          <div class="inputBox">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email Address"
+              aria-label="email"
+              required
+            />
+           
+          </div>
+           <img src="images/icon-error.svg" alt="Error icon" class="error-icon" />
           <button type="submit" class="submit-button">
             <img src="images/icon-arrow.svg" alt="Right pointed arrow" />
           </button>
         </form>
-        <!-- This is the error icon that will show when a valid email is not provided -->
-        <p class="error-msg">Please provide a valid email address</p>
+        <!-- This is the error message that will show when a valid email is not provided -->
+        <p class="error-msg">Please provide a valid email</p>
       </section>
     </main>
 

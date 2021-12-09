@@ -1,79 +1,111 @@
-html {
-  background-image: url("images/bg-pattern-desktop.svg");
-  width: 60%;
+/**************** Mobile Styles  *****************/
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-/* The following is styling for everything on the left side 
-on the page before the email form box */
-h1 {
-  color: hsl(0, 36%, 70%);
+/********* BODY STYLING *********/
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   font-family: "Josefin Sans", sans-serif;
-  font-size: 70px;
-  font-weight: 300;
-  letter-spacing: 20px;
-  padding-left: 200px;
-  margin-bottom: 20px;
 }
 
-span {
-  font-weight: 600;
-  color: hsl(0, 6%, 24%);
+/********* HEADER STYLING *********/
+header {
+  padding: 1.875rem 0 1.875rem 1.875rem;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-  padding: 50px 0 70px 220px;
+  width: 8.125rem;
 }
 
-.paragraph-one {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 16px;
+/********* MAIN STYLING *********/
+.main-pg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* Hero Image Styling */
+.main-pg_hero {
+  width: 100%;
+}
+
+.hero-desktop_img {
+  display: block;
+  width: 100%;
+}
+
+/* Headline Stlying */
+
+.main-pg_content {
+  width: 25rem;
+}
+
+.title {
+  font-size: 2.75rem;
+  letter-spacing: 0.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+}
+
+.title-pink {
   color: hsl(0, 36%, 70%);
-  padding-left: 220px;
-  line-height: 1.8;
+  font-weight: 300;
 }
 
-/* Styling for the email form box starts here */
-form {
-  padding-left: 200px;
+.title-gray {
+  color: hsl(0, 6%, 24%);
+  font-weight: 600;
 }
 
-/* This is for stlying the content inside the form box */
-.emailBox {
+.subtitle {
+  line-height: 150%;
+  margin: 1.5rem 2.5rem;
+}
+
+/* Email Form Stlying */
+#eform {
   border: solid hsl(0, 36%, 70%) 1px;
   border-radius: 40px;
+  display: flex;
+  height: 3rem;
+  padding-left: 0.625rem;
+  margin: 0 2rem 1.25rem 2rem;
+}
+
+input {
+  background: transparent;
+  border: none;
+  flex-grow: 2;
+  padding: 1.125rem 5.313rem 0.938rem 1.25rem;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 16px;
-  padding: 20px 60px 20px 10px;
-  margin-top: 25px;
-  width: 46%;
 }
 
 ::placeholder {
   color: hsl(0, 36%, 70%);
-  padding-left: 10px;
   opacity: 0.5;
 }
 
-#error-icon {
-  position: absolute;
-  bottom: 330px;
-  left: 458px;
-  visibility: hidden;
-}
-
+/* Submit button styling */
 .submit-button {
-  padding: 15px 45px 18px;
+  flex-grow: 1;
   background: linear-gradient(
     135deg,
     rgba(248, 191, 191, 1) 35%,
     rgba(238, 140, 140, 1) 100%
   );
-  border: solid hsl(0, 36%, 70%) 1px;
+  border: none;
   border-radius: 40px;
-  position: relative;
-  right: 95px;
-  top: 3px;
-  transition: all 150ms ease-in-out;
+  box-shadow: 5px 15px 40px hsl(0, 36%, 75%);
+  width: 4.688rem;
 }
 
 .submit-button:hover {
@@ -85,26 +117,158 @@ form {
   cursor: pointer;
 }
 
+/* Error Form Styling */
+.error-icon {
+  display: none;
+  height: 1.25rem;
+  padding-top: 14px;
+  padding-right: 5px;
+  width: 1.25rem;
+}
+
+.error-msg {
+  display: none;
+  color: hsl(0, 93%, 68%);
+  font-size: 0.875rem;
+}
+
+/**************** Desktop Styles  *****************/
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 10%;
+  }
+
+  header {
+    padding-top: 4.375rem;
+    position: absolute;
+    width: 50%;
+  }
+
+  .logo {
+    width: 9.375rem;
+  }
+
+  .main-pg {
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+
+  .main-pg_content {
+    padding-right: 10%;
+    margin-bottom: 6.25rem;
+    width: 100%;
+  }
+
+  .hero-desktop_img {
+    min-height: 100vh;
+    object-fit: cover;
+  }
+
+  .title {
+    font-size: 4.375rem;
+    margin-top: 6.25rem;
+  }
+
+  .subtitle {
+    line-height: 24px;
+    margin: 1.5rem 2.5rem 2.5rem 0;
+    width: 78%;
+  }
+
+  #eform {
+    margin: 0 9.375rem 1.25rem 0;
+  }
+
+  input {
+    padding-right: 8.75rem;
+  }
+}
+
+/* The following is styling for everything on the left side 
+on the page before the email form box */
+/* 
+.title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 70px;
+  letter-spacing: 20px;
+  padding-left: 200px;
+  margin-bottom: 20px;
+}
+
+
+
+.logo {
+  padding: 50px 0 70px 220px;
+}
+
+.subtitle {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  color: hsl(0, 36%, 70%);
+  padding-left: 220px;
+  line-height: 1.8;
+} */
+
+/* Styling for the email form box starts here */
+/* form {
+  padding-left: 200px;
+} */
+
+/* This is for stlying the content inside the form box */
+/* .emailBox {
+  
+  border-radius: 40px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  padding: 20px 60px 20px 10px;
+  margin-top: 25px;
+  width: 46%;
+}
+
+
+
+#error-icon {
+  position: absolute;
+  bottom: 330px;
+  left: 458px;
+  visibility: hidden;
+}
+
+
+
+.submit-button:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 245, 245, 1) 30%
+  );
+  cursor: pointer;
+} */
+
 /* The error message that will show up when the user doesn't enter a valid email */
-.error-message {
+/* .error-message {
   font-family: "Josefin Sans", sans-serif;
   font-size: 0.8rem;
   color: hsl(0, 93%, 68%);
   margin-left: 220px;
   visibility: hidden;
-}
+} */
 /* Styling for the email form box ends here */
 
-.main-image {
+/* .hero-desktop {
   height: 100%;
   position: absolute;
   right: 0px;
   top: 0px;
-}
+} */
 
 /* Styles below are for the footer content */
 
-.attribution {
+/* .attribution {
   color: hsl(0, 6%, 24%);
   font-family: "Josefin Sans", sans-serif;
   padding-left: 250px;
@@ -119,9 +283,4 @@ form {
 
 .frontend-link:hover {
   color: hsl(0, 74%, 74%);
-}
-
-/* Portrait Cell Mode */
-
-/* @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: Portrait) {
 } */

@@ -73,7 +73,7 @@ header {
 
 /* Email Form Stlying */
 #eform {
-  border: solid hsl(0, 36%, 70%) 1px;
+  border: solid 1px hsl(0, 36%, 70%);
   border-radius: 40px;
   display: flex;
   height: 3rem;
@@ -124,6 +124,9 @@ input {
   padding-top: 14px;
   padding-right: 5px;
   width: 1.25rem;
+  /* background-image: url("images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: right 5% center; */
 }
 
 .error-msg {
@@ -132,6 +135,24 @@ input {
   font-size: 0.875rem;
 }
 
+/* Styles below are for the footer content
+
+.attribution {
+  color: hsl(0, 6%, 24%);
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  
+}
+
+.frontend-link {
+  color: hsl(0, 36%, 70%);
+  text-decoration: none;
+}
+
+.frontend-link:hover {
+  color: hsl(0, 74%, 74%);
+} */
+
 /**************** Desktop Styles  *****************/
 
 @media screen and (min-width: 768px) {
@@ -139,7 +160,7 @@ input {
     background-image: url("images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding-left: 10%;
+    padding-left: 15%;
   }
 
   header {
@@ -170,7 +191,7 @@ input {
 
   .title {
     font-size: 4.375rem;
-    margin-top: 6.25rem;
+    margin-top: 10rem;
   }
 
   .subtitle {
@@ -186,101 +207,8 @@ input {
   input {
     padding-right: 8.75rem;
   }
+
+  .error-msg {
+    margin-left: 2.5rem;
+  }
 }
-
-/* The following is styling for everything on the left side 
-on the page before the email form box */
-/* 
-.title {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 70px;
-  letter-spacing: 20px;
-  padding-left: 200px;
-  margin-bottom: 20px;
-}
-
-
-
-.logo {
-  padding: 50px 0 70px 220px;
-}
-
-.subtitle {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 16px;
-  color: hsl(0, 36%, 70%);
-  padding-left: 220px;
-  line-height: 1.8;
-} */
-
-/* Styling for the email form box starts here */
-/* form {
-  padding-left: 200px;
-} */
-
-/* This is for stlying the content inside the form box */
-/* .emailBox {
-  
-  border-radius: 40px;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 16px;
-  padding: 20px 60px 20px 10px;
-  margin-top: 25px;
-  width: 46%;
-}
-
-
-
-#error-icon {
-  position: absolute;
-  bottom: 330px;
-  left: 458px;
-  visibility: hidden;
-}
-
-
-
-.submit-button:hover {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 245, 245, 1) 30%
-  );
-  cursor: pointer;
-} */
-
-/* The error message that will show up when the user doesn't enter a valid email */
-/* .error-message {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 0.8rem;
-  color: hsl(0, 93%, 68%);
-  margin-left: 220px;
-  visibility: hidden;
-} */
-/* Styling for the email form box ends here */
-
-/* .hero-desktop {
-  height: 100%;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-} */
-
-/* Styles below are for the footer content */
-
-/* .attribution {
-  color: hsl(0, 6%, 24%);
-  font-family: "Josefin Sans", sans-serif;
-  padding-left: 250px;
-  padding-top: 200px;
-  text-align: left;
-}
-
-.frontend-link {
-  color: hsl(0, 36%, 70%);
-  text-decoration: none;
-}
-
-.frontend-link:hover {
-  color: hsl(0, 74%, 74%);
-} */

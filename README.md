@@ -1,10 +1,10 @@
 # BaseApparelComingSoon
 
-This is the Base Apparel coming soon page challengefrom [Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0). Below you can view the solution to this challenge. 
+This is the Base Apparel coming soon page challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0). Below you can view the solution to this challenge. 
 
 
 # Overview
-***
+
 ## The Challenge
 
 Your users should be able to:
@@ -19,7 +19,7 @@ Your users should be able to:
 
   ![](Screenshots/Desktop-BaseApparel.jpg)
   ![](Screenshots/Desktop-BaseApparel-Active.jpg)
-  ![](Screenshots/Desktop-BaseApparel-Active.jpg)
+  ![](Screenshots/Mobile-BaseApparel.jpg)
 
   ## Links
 
@@ -27,13 +27,13 @@ Your users should be able to:
   * [Live Site URL](https://aoa19.github.io/BaseApparelComingSoon/)
 
 # The Process
-***
+
 ## Built With:
 * Semantic HTML5 Markup
 * Flexbox
 * Mobile-first approach 
 
 # Author
-***
+
 * Github: [@AOA19](https://github.com/AOA19)
 * Frontend Mentor: [@AOA19](https://www.frontendmentor.io/profile/AOA19)

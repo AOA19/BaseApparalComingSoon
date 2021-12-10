@@ -54,19 +54,26 @@
           launch deals.
         </p>
         <!----Email form box---->
-        <form id="eform" action="#" name="eform">
-          <div class="inputBox">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email Address"
-              aria-label="email"
-              required
-            />
-           
-          </div>
-           <img src="images/icon-error.svg" alt="Error icon" class="error-icon" />
+        <form
+          id="eform"
+          action="#"
+          name="eform"
+          onsubmit=" return validate()"
+          novalidate
+        >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+            aria-label="email"
+            required
+          />
+          <img
+            src="images/icon-error.svg"
+            alt="Error Icon"
+            class="error-icon"
+          />
           <button type="submit" class="submit-button">
             <img src="images/icon-arrow.svg" alt="Right pointed arrow" />
           </button>
@@ -75,18 +82,21 @@
         <p class="error-msg">Please provide a valid email</p>
       </section>
     </main>
-
-    <!-- <footer>
-      <p class="attribution">
-        Challenge by
-        <a
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
-          class="frontend-link"
-          >Frontend Mentor</a
-        >
-        Coded by AOA19
-      </p>
-    </footer> -->
+     <!-- Footer attribution
+    <footer>
+      <div class="attribution">
+        <p>
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            class="frontend-link"
+            >Frontend Mentor</a
+          >
+          Coded by AOA19
+        </p> -->
+      </div>
+    </footer>
+    <script src="validation.js"></script>
   </body>
 </html>
